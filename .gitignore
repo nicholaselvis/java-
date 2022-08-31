@@ -1,23 +1,67 @@
-# Compiled class file
-*.class
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum2;
 
-# Log file
-*.log
+//import java.util.*;
+import javax.swing.JOptionPane;
 
-# BlueJ files
-*.ctxt
+/**
+ *
+ * @author Praktikan
+ */
+public class Praktikum2 {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+//        int apa = 10;
+//        double koma = 1.5d;
+//        float dua = 1.9f;
+//        long panjang = 999999L;
+//        
+//        System.out.println(apa);
+//        System.out.println(koma);
+//        System.out.println(dua);
+//        System.out.println(panjang);
+//        
+//        boolean isTrue = false;
+//        
+//        System.out.println(isTrue);
+//        
+//        char ch = 'a';
+//        System.out.println(ch);
+//        String str = "jhon cena";
+//        System.out.println(str);
+//        
+//        double fromInt = apa;
+//        
+//        double banyak = 2.3456;
+//        int fromDb = (int) banyak;
+//        System.out.println(fromDb);
+        
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("nama anda : ");
+//        String nama = sc.nextLine();
+//        
+//        System.out.print("umur anda : ");
+//        int age = sc.nextInt();
+//        
+//        sc.nextLine();
+//        
+//        System.out.print("hobi : ");
+//        String hobi = sc.nextLine();
+//        
+//        System.out.println(nama);
+//        System.out.println(age);
+//        System.out.println(hobi);
+        
+        String nama = JOptionPane.showInputDialog("input nama anda ");
+    }
+    
+    
+}
