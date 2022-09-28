@@ -15,14 +15,14 @@ class Mahasiswa {
     private double nilaiUas;
     private double nilaiUts;
     
-    public void insertNilaiUas(double nilai){
+    public void insertNilaiUas(double nilai){  //method
         nilaiUas = nilai;
     }
-    public void insertNilaiUts(double nilai){
+    public void insertNilaiUts(double nilai){  //method
         nilaiUts = nilai;
     }
     
-    public void dataMhs(){
+    public void dataMhs(){   //method
         System.out.println("NAMA            : " + nama);
         System.out.println("NPM             : " + npm);
         System.out.println("UAS             : " + nilaiUas);
@@ -30,10 +30,12 @@ class Mahasiswa {
         System.out.println("NILAI AKHIR     : " + nilaiAkhir());
     }
     
-    public double nilaiAkhir(){
+    public double nilaiAkhir(){  //method
         double jumlah = nilaiUts + nilaiUas;
         return jumlah/2;
     }
-    
+//CATATAN : jika private harus pake method    
     
 }
+
+
