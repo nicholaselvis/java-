@@ -18,13 +18,13 @@ public class Nicholas_Praktikum6 {
         mhs1.nama = "elvis";
         mhs1.npm  = "2117051053";
         
-        System.out.println(mhs1.nama);
+        System.out.println(mhs1.nama);  //memanggil class public
         System.out.println(mhs1.npm);
         
         mhs1.insertNilaiUas(70);
         mhs1.insertNilaiUts(50);
        
-        mhs1.dataMhs();
+        mhs1.dataMhs();  //memanggil class private
         
         
     }
