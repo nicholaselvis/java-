@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package nicholas_praktikum6;
+
+/**
+ *
+ * @author Praktikan
+ */
+class Mahasiswa {
+    public String nama = "nicholas";
+    public String npm;
+    private double nilaiUas;
+    private double nilaiUts;
+    
+    public void insertNilaiUas(double nilai){
+        nilaiUas = nilai;
+    }
+    public void insertNilaiUts(double nilai){
+        nilaiUts = nilai;
+    }
+    
+    public void dataMhs(){
+        System.out.println("NAMA            : " + nama);
+        System.out.println("NPM             : " + npm);
+        System.out.println("UAS             : " + nilaiUas);
+        System.out.println("UTS             : " + nilaiUts);
+        System.out.println("NILAI AKHIR     : " + nilaiAkhir());
+    }
+    
+    public double nilaiAkhir(){
+        double jumlah = nilaiUts + nilaiUas;
+        return jumlah/2;
+    }
+    
+    
+}
