@@ -1,0 +1,139 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package nicholas_praktikum7;
+
+/**
+ *
+ * @author Praktikan
+ */
+public class Mahasiswa {
+    private String nama;
+    private String npm;
+    private double nilaiTugas;
+    private double nilaiUas;
+    private double nilaiUts;
+    private double NA;
+    
+    
+    public Mahasiswa(
+        String nama, String npm, double nilaiTugas, double nilaiUas, double nilaiUts
+    ){
+        this.nama = nama;
+        this.npm = npm;
+        this.nilaiTugas = nilaiTugas;
+        this.nilaiUas = nilaiUas;
+        this.nilaiUts = nilaiUts;
+    }
+    
+    public void printData(String jurusan){
+        System.out.println("NPM \t: " + this.getNpm());
+        System.out.println("Nama\t: " + this.getNama());
+        System.out.println("Jurusan\t: " + jurusan);
+    }
+    
+    public int sumValue(int x,int y){
+        return x+y;
+    }
+    
+    public void hitungNA(){
+        this.setNA((this.getNilaiTugas() * 0.3) + (this.getNilaiUts() * 0.35) + (this.getNilaiUas() * 0.35));
+    }
+    
+     public void hitungNA(double nilaiTugas, double nilaiUts, double nilaiUas){
+         this.setNA((nilaiTugas*0.3) + (nilaiUts*0.35) + (nilaiUas*0.35));
+    }
+     
+     public void hitungNA(String pesan){
+         System.out.println("halo " + pesan);
+    }
+
+    /**
+     * @return the nama
+     */
+    public String getNama() {
+        return nama;
+    }
+
+    /**
+     * @param nama the nama to set
+     */
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    /**
+     * @return the npm
+     */
+    public String getNpm() {
+        return npm;
+    }
+
+    /**
+     * @param npm the npm to set
+     */
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    /**
+     * @return the nilaiTugas
+     */
+    public double getNilaiTugas() {
+        return nilaiTugas;
+    }
+
+    /**
+     * @param nilaiTugas the nilaiTugas to set
+     */
+    public void setNilaiTugas(double nilaiTugas) {
+        this.nilaiTugas = nilaiTugas;
+    }
+
+    /**
+     * @return the nilaiUas
+     */
+    public double getNilaiUas() {
+        return nilaiUas;
+    }
+
+    /**
+     * @param nilaiUas the nilaiUas to set
+     */
+    public void setNilaiUas(double nilaiUas) {
+        this.nilaiUas = nilaiUas;
+    }
+
+    /**
+     * @return the nilaiUts
+     */
+    public double getNilaiUts() {
+        return nilaiUts;
+    }
+
+    /**
+     * @param nilaiUts the nilaiUts to set
+     */
+    public void setNilaiUts(double nilaiUts) {
+        this.nilaiUts = nilaiUts;
+    }
+
+    /**
+     * @return the NA
+     */
+    public double getNA() {
+        return NA;
+    }
+
+    /**
+     * @param NA the NA to set
+     */
+    public void setNA(double NA) {
+        this.NA = NA;
+    }
+    
+    
+    
+}
