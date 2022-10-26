@@ -2,7 +2,7 @@ package praktikum9_nicholas;
 
 public class Praktikum9_Nicholas {
     public static class Tabung {
-    private static final double phi = 3.14;
+    private static final double phi = Math.PI;
     
     public static double Volume(double jari, double tinggi){
         double volume = phi*jari*jari*tinggi;
